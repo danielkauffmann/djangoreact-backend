@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
+
 from rest_framework import routers
+from rest_framework.authtoken import views
 
 from .views import UserViewSet, GroupViewSet
 from core.views import ListViewSet, ItemViewSet
@@ -18,5 +20,5 @@ urlpatterns = [
 
     path('', include(router.urls)),
 
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api-token-auth/', views.obtain_auth_token, name='api-token-auth'),
 ]
