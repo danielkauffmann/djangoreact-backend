@@ -9,7 +9,7 @@ SECRET_KEY = 'm62ez$jp1=gfi5o&5zoe3y!j)tg)jdx!v5qpoz&sudarh$7eyi'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['191.234.162.100', 'localhost']
+ALLOWED_HOSTS = ['191.234.162.100', '127.0.0.1']
 
 
 
